@@ -7,7 +7,6 @@ const port = process.env.PORT ||  3000;
 
 app.use('/', express.static(__dirname));
 
-app.listen(port, () => console.log("Server is ready at 3000"));
 
 app.use(bodyParser.urlencoded({
     extended: false
@@ -17,20 +16,23 @@ app.use(bodyParser.json());
 // const express = require("express");
 const MongoClient = require('mongodb').MongoClient;
 const assert = require("assert");
+
+const mongoose = require('mongoose');
+
 // const app = express();
 // const router = express.Router();
 // const path = require('path');
 
-const uri = "mongodb+srv://tomsontai:Hexadecimal1%21@cluster0-8wth4.mongodb.net/test?retryWrites=true&w=majority";
+const uri = 'mongodb+srv://tomsontai:Hexadecimal1%21@cluster0-8wth4.mongodb.net/test?retryWrites=true&w=majority';
 
 
 // connect Mongoose to your DB
-const mongoose = require('mongoose');
 mongoose.connect(uri, 
     {
         useUnifiedTopology: true,
         useNewUrlParser: true
-    });
+    }
+);
 
 // app.use('/', router);
 
@@ -119,3 +121,5 @@ app.post('/scores', (req, res) => {
 // router.get('/leaderboard',function(req,res){
 //     res.sendFile(path.join(__dirname+'/leaderboard.html'));
 // });
+
+app.listen(port, () => console.log("Server is ready at 3000"));
