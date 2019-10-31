@@ -24,7 +24,13 @@ const assert = require("assert");
 const uri = "mongodb+srv://tomsontai:Hexadecimal1%21@cluster0-8wth4.mongodb.net/test?retryWrites=true&w=majority";
 
 
-  
+// connect Mongoose to your DB
+const mongoose = require('mongoose');
+mongoose.connect(uri, 
+    {
+        useUnifiedTopology: true,
+        useNewUrlParser: true
+    });
 
 // app.use('/', router);
 
