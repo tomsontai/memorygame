@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Text);
+body {
+    background-color: rgb(13, 51, 60);
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    font-family: 'Red Hat Text', sans-serif;
+    height: 100em;
+}
+
+h1 {
+    color: white;
+}
+
+ol {
+    color: white;
+}
+
+h3 {
+    padding-left: 20px;
+    word-spacing: 100px;
+    color: black;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+#play-button {
+    margin-top: 10em;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0F91A1;
+    color: white;
+}
+
+#play-button:hover {
+    cursor: pointer;
+}
+
+#container {
+    margin-top: 7em;
+    text-align: center; /* Center container contents. Contents must be in display: inline-block container */
+}
+
+#attempt-counter {
+    margin-top: 1em;
+    color: white;
+    text-align: center;
+}
+
+#game-info-tab {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.info-item {
+    margin-right: 4em;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.07);
+    width: 360px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#terminate {
+    font-size: 20px;
+    color: white;
+    margin-top: 0em;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(172, 15, 17);
+
+}
+
+#restart {
+    margin-top: 0em;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(53, 117, 118);
+    color: rgb(222, 255, 78);
+}
+
+
+#board {
+    background-color: rgba(218, 215, 215, 0.603);
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+}
+
+.tile {
+    background-color: 	rgb(64, 60, 13);
+    margin: 5px;
+}
+
+.tile:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#name {
+    height: 3em;
+    width: 70%;
+    margin: auto;   
+}

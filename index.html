@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <head>
+        <meta charset="utf-8">
+        <title>Memory Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./scripts/Globals.js" defer></script>
+        <script src="./scripts/Main.js" defer></script>
+        <script src="./scripts/Tile.js" defer></script>
+        <script src="./scripts/Board.js" defer></script>
+        
+
+
+    </head>
+    <body>
+        <audio id="RestartGame">
+            <source src="./audio/RestartGame.wav" type="audio/mpeg">
+        </audio>
+
+        <div id="game-info-tab">
+            
+            <div class="info-item">
+                <h3 id="trials">GAME 1</h3>
+            </div>
+            <div class="info-item">
+                    <h3 id="tiles">TILES 0</h3>
+                </div>
+            <div class="info-item">
+                <h3 id="score">SCORE 0</h3>
+            </div>
+        </div>
+
+        <div>
+            <button id="terminate" onclick="terminateGame()">
+                Terminate
+            </button>
+        </div>
+
+        <div id="container">
+            <button id="play-button" onclick="play()">
+               Play
+            </button>
+        </div>
+
+        <h2 id="attempt-counter"/>
+
+        
+
+    </body>
+</html>
