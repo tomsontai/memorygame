@@ -121,7 +121,7 @@ class Board {
         }
     }
 
-    //Helper for renderBoard()
+    //Helper function for renderBoard()
     initBoardGraphic() {
         let board = document.createElement("div");
         board.style.padding = `${BOARD_BORDER_THICKNESS}px`;
